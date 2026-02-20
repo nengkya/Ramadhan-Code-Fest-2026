@@ -1,0 +1,28 @@
+<input type=text id=userInput placeholder='mak lo'>
+<button onclick=changeText()>pencet lah onclick         </button>
+<button id     =button      >pencet lah addEventListener</button>
+
+<div id=output></div>
+
+<script>
+    /*
+    button.onclick = handler1
+    button.onclick = handler2 //overwrites handler1
+
+    button.addEventListener('click', handler1 or function1())
+    button.addEventListener('click', handler2 or function2())
+
+    ECMAscript = European Computer Manufacturers Association
+
+    MDN (Mozilla Developer Network)
+
+    onclick
+    */
+    function changeText() {
+
+        document.getElementById('output').textContent = document.getElementById('userInput').value;
+
+        document.getElementById('button').addEventListener('click', changeText)
+
+    }
+</script>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <title>HaGa IT Solution</title>
+        <script>
+            function changeText() {
+
+                /*get the element by its id*/
+                const element = document.getElementById('title')
+
+                /*change the content of the element*/
+                if (element) /*found*/ {
+
+                    element.innerHTML   = "You've got prank !"
+
+                    element.style.color = 'blue'
+
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <h6 id=title>There is a robber in your place</h6>
+
+        <button onclick=changeText()> Change Text</button>
+    </body>
+</html>
